@@ -1,0 +1,10 @@
+# IDE etditeurs
+.idea/           # IntelliJ IDEA, WebStorm, PyCharm, etc.
+.idea/*
+*.iml            # IntelliJ IDEA module files
+.vscode/         # Visual Studio Code
+*.suo            # Visual Studio
+*.user           # Visual Studio
+*.userosscache   # Visual Studio
+*.sln.docstates  # Visual Studio
+*.orig           # Merge conflict backups 
