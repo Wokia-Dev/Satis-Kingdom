@@ -87,7 +87,16 @@ main {
 
 #trailer {
     border-radius: 10px;
-    
+    margin-right: 7%;
+    margin-left: 7%;
+}
+
+.text-Title {
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #video-trailer {
@@ -97,16 +106,58 @@ main {
     margin-left: 35px;
 
 }
+.trailer-section {
+    margin-top: 20px;
+    margin-bottom: 150px;
+}
+
+.trailer-paragraph {
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+    margin: 30px 10%;
+}
 
 
 /* SlideShow */
 .slideshow-container {
-    max-width: 1000px;
+    margin-right: 10%;
+    margin-left: 10%;
     position: relative;
-    margin: auto;
-    border-radius: 10px;
-    border: solid rgba(153, 76, 0, 0.9);
 }
+
+/* Title and description */
+.info-container {
+    text-align: center;
+    margin-top: 10px;
+    animation: fade 1.5s ease-in-out;
+}
+
+.title-container h2 {
+    margin: 0;
+    color: #333;
+    font-size: 35px;
+    text-align: center;
+}
+
+.title-container {
+    margin-bottom: 20px;
+}
+/* Description after the image */
+.description-container {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    animation: fade 1.5s ease-in-out;
+}
+
+.description-container p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+}
+
 
 /* Hide images */
 .slides {
@@ -184,4 +235,31 @@ main {
 @-webkit-keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+/* Title and description */
+.title {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    animation: fade-in 1.5s;
+}
+
+.description {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    animation: fade-in 1.5s;
+}
+
+/* Fade-in effect */
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
