@@ -79,7 +79,7 @@ main {
     top: -30px;
     background-color: rgba(223, 140, 85, 0.25);
     backdrop-filter: blur(5px);
-    margin: 100px;
+    margin: 100px 10%;
     padding: 10px;
     border: solid rgb(202, 131, 89);
     border-radius: 10px;
