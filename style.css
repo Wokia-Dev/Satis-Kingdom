@@ -1,18 +1,17 @@
 /* Avec un point pour créer les classe (.blabla {}) et pour les balises juste mettre le nom de la balise */
 nav {
-    background-color: #B5F9F4;
+    background-color:#76c78a;
     padding: 10px;
     /*position: fixed;*/
     width: auto;
 }
-
 
 nav table {
     margin: auto; /* centrer les liens*/
 }
 
 nav th a{
-    background-color: #8DFFA4;
+    background-color: #e7c29a;
     text-decoration: none;
     border-radius: 7px;
     padding: 7px;
@@ -27,13 +26,13 @@ body {
 }
 
 .page-actuel {
-    background-color: blue;
+    background-color:#ac8005;
     text-decoration: none;
     border-radius: 7px;
     padding: 7px;
     text-align: center;
     margin-right: 10px;
-    color: brown;
+    color: #f5f5dc;
 }
 
 
@@ -68,7 +67,7 @@ body {
     margin-right: 30%;
     font-size: 342%;
     font-family:cursive;
-    color: #cdd75a;
+    color: #f5f5dc  ;
     border-radius: 20px;
     padding-bottom: 5px;
     background-color: #329630;
@@ -116,6 +115,7 @@ main {
 }
 
 
+/* Debut du JS*/
 /* SlideShow */
 .slideshow-container {
     margin-right: 10%;
