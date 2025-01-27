@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Equipe 404.SLNF">
-    <meta name="description" content="Une page d'accueil du site web de Satis-Kingdom">
+    <meta name="author" data-key="author" content="Equipe 404.SLNF">
+    <meta name="description" data-key="description" content="Une page d'accueil du site web de Satis-Kingdom">
     <meta name="keywords" content="Satis-Kingdom,RPG,Website">
     <link href="style.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="images/logoJeu.png">
@@ -19,18 +19,22 @@
             <th><a>Manuel</a></th>
             <th><a>Installer</a></th>
             <th><a>Nous contacter</a></th>
+            <th class="align-right">
+                <button id="language-btn" onclick="toggleLanguage()">Changer de langue</button>
+            </th>
         </tr>
     </table>
 </nav>
-<div>
+<div class="scrolling-image"></div>
+<!-- <div>
     <video autoplay muted loop id="background-video">
         <source src="images/fondVideo3fini.mp4" type="video/mp4">
         Votre navigateur ne supporte pas la vidéo.
     </video>
-</div>
+</div> -->
 <img src="images/logoJeu.png" alt="logo du jeu" id="logo-banniere">
 <section id="transition">
-    <h1 id="accroche">Farm, build and fight !</h1>
+    <h1 id="accroche" data-key="slogan">Récoltez, construisez et combattez !</h1>
     <br>
 </section>
 <main>
@@ -104,13 +108,20 @@
             <p id="slideDescription">This is the description for the first slide. It explains the first aspect of the
                 game.</p>
         </div>
-
     </section>
-
 </main>
-</body>
 <footer>
-    Je suis la
+    <br>
+    <br>
+    <br>
+    <a style="margin: 0;" href="https://pegi.info/https://pegi.info/"> <img class="pegi-footer" src="images/pegi12.png" alt="logo Pegi 12"></a>
+    <img class="logo-footer" src="images/Logo.png" alt="logo de l'entreprise">
+    <br>
+    <br>
+    
+    <div style="text-align: center;font-size:x-large;">
+        Satis-Kingdom © 2024-2025 by 404-Social-Life-Not-Found
+    </div>
 
     <script src="script.js"></script>
 </footer>

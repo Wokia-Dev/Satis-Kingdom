@@ -60,3 +60,61 @@ function startAutoSlide() {
 }
 
 
+
+
+
+
+// Objets de traduction + exemple : <h1 data-key="title">Bienvenue sur notre site</h1>
+const translations = {
+    fr: {
+        button: "English",
+        slogan: "Récolter, construisez et combattez !"
+    },
+    en: {
+        button: "Français",
+        slogan: "Farm, build and fight !"
+    }
+};
+
+// Langue par défaut
+let currentLanguage = 'fr';
+
+// Fonction pour changer la langue
+function toggleLanguage() {
+    // Basculer entre les langues
+    currentLanguage = currentLanguage === 'fr' ? 'en' : 'fr';
+
+    // Mettre à jour le contenu
+    updateContent();
+}
+
+// Mettre à jour les textes de la page
+function updateContent() {
+    const elements = document.querySelectorAll("[data-key]");
+    elements.forEach(el => {
+        const key = el.getAttribute("data-key");
+        el.textContent = translations[currentLanguage][key];
+    });
+
+    // Mettre à jour le texte du bouton
+    document.getElementById("language-btn").textContent = translations[currentLanguage].button;
+}
+
+// Initialiser le contenu
+updateContent();
+
+// Fonction pour calculer la taille de l'écran en pouces
+function getScreenSizeInInches() {
+    // Résolution de l'écran en pixels
+    const widthPixels = screen.width;
+    const heightPixels = screen.height;
+
+    // Estimation du DPI (DPI moyen pour un écran standard : 96)
+    const dpi = window.devicePixelRatio * 96;
+
+    // Calcul de la taille en pouces
+    const diagonalPixels = Math.sqrt(widthPixels ** 2 + heightPixels ** 2);
+    const screenSizeInInches = diagonalPixels / dpi;
+
+    return screenSizeInInches.toFixed(2); // Arrondi à 2 décimales
+}
