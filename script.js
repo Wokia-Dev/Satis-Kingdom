@@ -63,16 +63,29 @@ function startAutoSlide() {
 
 
 
-
 // Objets de traduction + exemple : <h1 data-key="title">Bienvenue sur notre site</h1>
 const translations = {
     fr: {
         button: "English",
-        slogan: "Récolter, construisez et combattez !"
+        slogan: "Récolter, construisez et combattez !",
+        accueil:"Accueil",
+        histoire:"Histoire du jeu",
+        a_propos:"A propos",
+        manuel:"Manuel",
+        installer:"Installer",
+        contact:"Nous contacter",
+        histoire_page:"Histoire du jeu"
     },
     en: {
         button: "Français",
-        slogan: "Farm, build and fight !"
+        slogan: "Farm, build and fight !",
+        accueil:"Home",
+        histoire:"Story of the game",
+        a_propos:"About us",
+        manuel:"Manual",
+        installer:"Download",
+        contact:"Contact us",
+        histoire_page:"Story of the game"
     }
 };
 
