@@ -21,10 +21,10 @@ nav th a{
 }
 
 .align-right {
-    text-align: right; /* Aligne le texte à droite */
-    position: absolute; /* Positionne cet élément absolument */
-    right: 5%; /* Décalage par rapport au bord droit de la page */
-    top: 0; /* Assure qu'il reste aligné verticalement */
+    text-align: right; 
+    position: absolute; 
+    right: 5%; 
+    top: 0; 
     padding: 4px;
     
 }
@@ -69,7 +69,7 @@ body {
     background-size: 100% auto; /* Assure que l'image conserve sa taille d'origine */
     background-repeat: repeat-y; /* Évite de répéter l'image */
     background-position: 0; /* Centre l'image */
-    animation: scroll 5000s linear infinite; /* Défilement infini */
+    animation: scroll 15000s linear infinite; /* Défilement infini */
 }
 
 @keyframes scroll {
@@ -162,8 +162,8 @@ footer {
 
 
 .logo-footer {
-    border-radius: 100%;
-    width: 10%;
+    border-radius: 10px;
+    width: 9%;
     margin-left: 2%;
     margin-top: 0%;
     margin-bottom: 0%;
