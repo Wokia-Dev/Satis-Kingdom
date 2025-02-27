@@ -178,6 +178,123 @@ footer {
     margin-bottom: 0.5%;
 }
 
+/* pour la timeline */
+.timeline {
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #007bff;
+    top: -10%;
+    bottom: -10%;
+    left: 50%;
+    margin-left: -2px;
+}
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 10px 40px;
+    box-sizing: border-box;
+    transition: 0.7s;
+}
+.timeline-item:nth-child(odd):hover{
+    -ms-transform: scale(1.3); 
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    left: -7.5%;
+    }
+.timeline-item:nth-child(even):hover{
+    -ms-transform: scale(1.3); 
+    -webkit-transform: scale(1.3); 
+    transform: scale(1.3);
+    left: 57.5%;
+    }
+.timeline-item:nth-child(odd) {
+    left: 0;
+    text-align: right;
+}
+.timeline-item:nth-child(even) {
+    left: 50%;
+    text-align: left;
+}
+.timeline-item:nth-child(odd)::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #007bff;
+    border-radius: 50%;
+    top: 40%;
+    left: 100%;
+    margin-left: -10px;
+}
+.timeline-item:nth-child(even)::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #007bff;
+    border-radius: 50%;
+    top: 40%;
+    left: 0%;
+    margin-left: -10px;
+}
+.timeline-content {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Pour la partie histoire / parchemin */ 
+
+
+.parchemin {
+    font-family: 'MedievalSharp', cursserifive;
+    font-weight: 1000;
+    text-align: left;
+    color: #5b3e1b;
+    position: relative;
+    
+}
+.center_parchemin::before, .center_parchemin::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background: #8b5a2b;
+    border-radius: 50% / 100%;
+}
+.center_parchemin::before {
+    top: -10px;
+}
+.center_parchemin::after {
+    bottom: -10px;
+}
+.center_parchemin {
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    background-color: #f4e9d8;
+    width: 80%;
+    max-width: 90%;
+    padding: 40px;
+    border: 10px solid #8b5a2b;
+    border-radius: 20px;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.2);
+    left: -3%;
+}
+
+
+
+
+
 
 
 
