@@ -67,7 +67,7 @@ function startAutoSlide() {
 const translations = {
     fr: {
         button: "English",
-        slogan: "Récolter, construisez et combattez !",
+        slogan: "Récoltez, construisez et combattez !",
         accueil:"Accueil",
         histoire:"Histoire du jeu",
         a_propos:"A propos",
