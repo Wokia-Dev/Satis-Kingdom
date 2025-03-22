@@ -82,10 +82,13 @@ body {
 }
 
 #logo-banniere {
-    left: 45%;
-    position: absolute;
+    position:absolute;
+    left: 50%;
+    transform: translate(-50%, 5%);
+    align-items: center;  
+    justify-content: center;
     height: 20%;
-    top: 100px;
+    top: 8%;
     border-radius: 35%;
     margin: 0;
     
@@ -262,6 +265,7 @@ footer {
 
 .photo_perso:hover {
     transform: scale(1.3);
+	z-index: 10000;
 }
 
 .photo_perso img{
