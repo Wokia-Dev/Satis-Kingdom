@@ -450,37 +450,28 @@ footer {
     color: #0c4b0e;
 }
 
-.section_rapport p {
-    margin-bottom: 3%;
-    margin-top: 3%;
-    margin-left: 3%;
+.download_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.download_box a {
+    display: inline-block; /* Permet à transform de fonctionner */
+    width: 30%;
     text-align: center;
-}
-
-.section_rapport a {
-    font-size: xx-large;
     text-decoration: none;
-
+    font-size: 20px;
+    background-color: #3498db;
+    margin-bottom: 2%;
+    padding: 1%;
+    color: white;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
 }
 
-.section_rapport th:hover {
-    transform:translate(0,-15%);
-}
-
-.section_rapport table { 
-    margin: 0;
-    border-spacing: 20px;
-}
-
-.section_rapport th {
-    margin: 0;
-    background: linear-gradient(0.25turn, #41c01e,#5fbc17,#8fd758);
-    color: #219625;
-    width: 4%;
-    padding: 2%;
-    margin: 2%;
-    border-radius: 1ch;
-    transition: 0.5s;
+.download_box a:hover {
+    transform: translateY(-10px); /* Déplacement vers la droite */
 }
 
 /*page de contact*/
