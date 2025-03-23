@@ -10,29 +10,18 @@
     <title>Satis-Kingdom</title>
   </head>
   <body>
-    <nav>
-        <table>
-            <tr>
-              <th><a href="index.html"  data-key="accueil">Accueil</a></th>
-              <th><a href="histoire.html" data-key="histoire">Histoire du jeu</a></th>
-              <th><a href="a_propos.html" data-key="a_propos">A propos</a></th>
-              <th><a href="installer.html" data-key="installer" class="page-actuel">Installer</a></th>
-              <th><a href="test.pdf" target="_blank" data-key="manuel">Manuel</a></th> <!-- surement aue faire un installation de fichier-->
-              <th><a href="contact.html" data-key="contact">Nous contacter</a></th>
-              <th class="align-right">
-                  <button id="language-btn" onclick="toggleLanguage()">Changer de langue</button>
-              </th>
-            </tr>
-        </table>
+    <nav class="nav_barre">
+        <a href="index.html" data-key="accueil">Accueil</a>
+        <a href="histoire.html" data-key="histoire">Histoire du jeu</a>
+        <a href="a_propos.html" data-key="a_propos">À propos</a>
+        <a href="installer.html" data-key="installer" id="page-actuel">Installer</a>
+        <a href="test.pdf" target="_blank" data-key="manuel">Manuel</a>
+        <a href="contact.html" data-key="contact">Nous contacter</a>
+        <button id="language-btn" onclick="toggleLanguage()">Changer de langue</button>
     </nav>
-    <div class="scrolling-image"></div>
-    <!-- <div>
-        <video autoplay muted loop id="background-video">
-            <source src="images/fondVideo3fini.mp4" type="video/mp4">
-            Votre navigateur ne supporte pas la vidéo.
-        </video>
-    </div> -->
-    <img src="images/logoJeu.png" alt="logo du jeu" id="logo-banniere">
+    <div class="scrolling-image">
+        <img src="images/logoJeu.png" alt="logo du jeu" id="logo-banniere">
+    </div>
     <section id="transition">
         <h1 id="accroche" >Installer Satis-Kingdom</h1>
         <br>

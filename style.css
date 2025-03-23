@@ -1,24 +1,42 @@
 /* Avec un point pour créer les classe (.blabla {}) et pour les balises juste mettre le nom de la balise */
-nav {
+.nav_barre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color:#76c78a;
     padding: 10px;
-    /*position: fixed;*/
-    width: auto;
 }
 
-nav table {
-    margin: auto; /* centrer les liens*/
-}
-
-nav th a{
+.nav_barre a {
     background-color: #e7c29a;
     text-decoration: none;
     border-radius: 7px;
     padding: 7px;
     text-align: center;
-    margin-right: 10px;
+    margin: 5px;
     color: brown;
 }
+
+#page-actuel {
+    background-color:#ac8005;
+    text-decoration: none;
+    border-radius: 7px;
+    padding: 7px;
+    text-align: center;
+    margin-right: 10px;
+    color: #f5f5dc;
+}
+
+.nav_barre button {
+    background-color: #3b30d8;
+    color: #31afd2;
+    border: none;
+    border-radius: 7px;
+    padding: 7px;
+    cursor: pointer;
+    margin: 5px;
+}
+
 
 .align-right {
     text-align: right; 
@@ -46,15 +64,7 @@ body {
     background-color: rgba(50, 170, 90, 0.2);
 }
 
-.page-actuel {
-    background-color:#ac8005;
-    text-decoration: none;
-    border-radius: 7px;
-    padding: 7px;
-    text-align: center;
-    margin-right: 10px;
-    color: #f5f5dc;
-}
+
 
 
 /* #background-video {
@@ -82,17 +92,39 @@ body {
 }
 
 #logo-banniere {
-    position:absolute;
-    left: 50%;
-    transform: translate(-50%, 5%);
-    align-items: center;  
-    justify-content: center;
-    height: 20%;
-    top: 8%;
     border-radius: 35%;
-    margin: 0;
-    
+    height: 70%;
+    padding-top: 0.5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+@keyframes logo-banniere-escape {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    0.01% {
+        transform: translateY(-20px);
+        transform: rotateX(360);
+        opacity: 0;
+    }
+    0.02% {
+        transform: translateY(-2000px);
+    }
+    100% {
+        
+    }
+}
+
+@media (max-width:670px) {
+    #logo-banniere {
+        animation: logo-banniere-escape 5000s ease-in-out 1;
+    }
+}
+
+
 
 #transition {
     position: relative;
@@ -461,17 +493,18 @@ footer {
     width: 30%;
     text-align: center;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 150%;
     background-color: #3498db;
     margin-bottom: 2%;
     padding: 1%;
     color: white;
     border-radius: 5px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s ;
 }
 
 .download_box a:hover {
-    transform: translateY(-10px); /* Déplacement vers la droite */
+    transform: translateY(-10%); /* Déplacement vers la droite */
+    background-color: #256a97;
 }
 
 /*page de contact*/
