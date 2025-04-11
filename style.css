@@ -452,7 +452,6 @@ footer {
 /*page d'installation*/
 .installation_image {
     width: 40%;
-    position: relative;
     display: flex;
    margin-right: 0;
    margin-top: 5%;
