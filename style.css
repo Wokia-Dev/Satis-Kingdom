@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     justify-content: center;
     background-color:#76c78a;
-    padding: 10px;
+    padding: 20px;
 }
 
 .nav_barre a {
@@ -64,23 +64,57 @@ body {
     margin: 0;
     background-color: rgba(50, 170, 90, 0.2);
 }
+#installation_bouton {
+    position:fixed;
+    left: 0%;
+    top: 4.5%;
+    margin: 0.5%;
+    margin-left: 0%;
+    margin-top: -2.5%;
+    min-width: 100px;
+    background-color: rgb(255, 120, 42);
+    color: rgb(255, 218, 72);
+    text-decoration: none;
+    font-size: x-large;
+    padding: 0.5%;
+    
+    border-radius: 10%;
+    letter-spacing: 5%;
+    transition: all 0.3s ease;
+    transform-origin: top left;
+    z-index: 1000;
+
+
+    
+}
+
+#installation_bouton:hover {
+    transform: scale(150%);
+    
+}
+#installation_bouton.scroll_installer {
+    padding: 0.5%;
+    font-size: large;
+    transform-origin: top left;
+
+}
+
+#installation_bouton.scroll_installer:hover {
+    transform: scale(170%);
+}
 
 
 
 
-/* #background-video {
-    min-width: 100%; 
-  object-fit: cover;
-} */
 
 .scrolling-image {
-    width: 100vw; /* Occupe toute la largeur de l'écran */
+    width: 100vw; 
     height: 30vh;
-    background-image: url('images/fondStatic.png'); /* Remplacez par le chemin de votre image */
-    background-size: 100% auto; /* Assure que l'image conserve sa taille d'origine */
-    background-repeat: repeat-y; /* Évite de répéter l'image */
-    background-position: 0; /* Centre l'image */
-    animation: scroll 15000s linear infinite; /* Défilement infini */
+    background-image: url('images/fondStatic.png');
+    background-size: 100% auto;
+    background-repeat: repeat-y; 
+    background-position: 0;
+    animation: scroll 15000s linear infinite; 
 }
 
 @keyframes scroll {
@@ -356,7 +390,7 @@ footer {
     width: 50%;
     padding: 10px 40px;
     box-sizing: border-box;
-    transition: 1s;
+    transition: 2s;
 }
 .timeline-item:nth-child(odd):hover{
     transform: scale(1.3);
@@ -489,7 +523,7 @@ footer {
 }
 
 .download_box a {
-    display: inline-block; /* Permet à transform de fonctionner */
+    display: inline-block; 
     width: 30%;
     text-align: center;
     text-decoration: none;
@@ -503,7 +537,7 @@ footer {
 }
 
 .download_box a:hover {
-    transform: translateY(-10%); /* Déplacement vers la droite */
+    transform: translateY(-10%);
     background-color: #256a97;
 }
 

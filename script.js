@@ -74,7 +74,8 @@ const translations = {
         manuel:"Manuel",
         installer:"Installer",
         contact:"Nous contacter",
-        histoire_page:"Histoire du jeu"
+        histoire_page:"Histoire du jeu",
+        big_installer:"INSTALLEZ MOI !"
     },
     en: {
         button: "Français",
@@ -85,7 +86,8 @@ const translations = {
         manuel:"Manual",
         installer:"Download",
         contact:"Contact us",
-        histoire_page:"Story of the game"
+        histoire_page:"Story of the game",
+        big_installer:"DOWNLOAD ME !"
     }
 };
 
@@ -94,14 +96,10 @@ let currentLanguage = 'fr';
 
 // Fonction pour changer la langue
 function toggleLanguage() {
-    // Basculer entre les langues
     currentLanguage = currentLanguage === 'fr' ? 'en' : 'fr';
-
-    // Mettre à jour le contenu
     updateContent();
 }
 
-// Mettre à jour les textes de la page
 function updateContent() {
     const elements = document.querySelectorAll("[data-key]");
     elements.forEach(el => {
@@ -109,25 +107,20 @@ function updateContent() {
         el.textContent = translations[currentLanguage][key];
     });
 
-    // Mettre à jour le texte du bouton
     document.getElementById("language-btn").textContent = translations[currentLanguage].button;
 }
 
-// Initialiser le contenu
 updateContent();
 
-// Fonction pour calculer la taille de l'écran en pouces
-function getScreenSizeInInches() {
-    // Résolution de l'écran en pixels
-    const widthPixels = screen.width;
-    const heightPixels = screen.height;
 
-    // Estimation du DPI (DPI moyen pour un écran standard : 96)
-    const dpi = window.devicePixelRatio * 96;
-
-    // Calcul de la taille en pouces
-    const diagonalPixels = Math.sqrt(widthPixels ** 2 + heightPixels ** 2);
-    const screenSizeInInches = diagonalPixels / dpi;
-
-    return screenSizeInInches.toFixed(2); // Arrondi à 2 décimales
-}
+window.addEventListener('scroll', () => {
+    const lien = document.getElementById('installation_bouton');
+  
+    if (window.scrollY > 50) {
+      lien.classList.add('scroll_installer');
+    } else {
+      lien.classList.remove('scroll_installer');
+    }
+  });
+  
+  
