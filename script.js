@@ -75,7 +75,19 @@ const translations = {
         installer:"Installer",
         contact:"Nous contacter",
         histoire_page:"Histoire du jeu",
-        big_installer:"INSTALLEZ MOI !"
+        big_installer:"INSTALLEZ MOI !",
+        histoire1:"Il était une fois, dans une contrée lointaine, très lointaine, un jeune homme fatigué de vivre au XXIe siècle, où pollution et nuisances sonores rythmaient son quotidien. En tant qu’adolescent, il avait besoin de liberté et de se reconnecter avec la nature. Un jour, alors qu’il allait chercher son repas dans une boulangerie proche de son école, il tomba sur un panneau publicitaire proposant des vacances déconnectées du monde extérieur, dans sa propre ville, et à petit prix !",
+        histoire2:"Craignant que l’occasion ne se représente plus, et dans l’élan d’un choix impulsif, il décida de ne pas retourner en cours cet après-midi-là pour profiter de cette promesse de liberté.",
+        histoire3:"Après avoir pris différents trams, notre héros arriva enfin au lieu tant espéré. De grands immeubles aux briques ocres se dressaient devant lui, mais la destination souhaitée se trouvait entre ces deux colosses rouges. Même s’il était midi passé, cette rue n’était éclairée que par les minces reflets des vitres d’en face, si faibles qu’on ne voyait même pas le bout de la ruelle.",
+        histoire4:"Notre héros avait la boule au ventre et songea à rebrousser chemin, mais le désir d’une vie meilleure apaisa ses craintes, et il s’avança dans la rue à pas de loup. À peine avait-il parcouru une dizaine de mètres qu’il sentit une présence derrière lui. Mais avant même d’avoir le temps de se retourner, il perdit connaissance…",
+        histoire5:"Cette perte de conscience ne sembla durer qu’une seconde, mais à son réveil, il se retrouva dans un endroit totalement différent, où macadam et immeubles avaient laissé place aux prairies et aux sapins géants.",
+        histoire6:"Même si cet endroit lui semblait familier, il ne ressemblait plus du tout au monde réel, mais plutôt à un mélange de ses jeux favoris, ceux auxquels il passait tant d’heures, jusqu’à en altérer sa perception de la vraie vie.",
+        histoire7:"Il finit par s’extraire de cette forêt pour retrouver la lumière. Cependant, en levant les yeux, pas de soleil, ni de nuages… pourtant, tout faisait penser qu’il était midi. Seul un texte en relief trônait dans le ciel : « Satis-Kingdom ».",
+        histoire8:"Malgré un flot de questions dans sa tête, un homme âgé courut vers lui, une sorte de télécommande à la main. Et sans qu’il ait eu le temps de s’écarter, l’homme le percuta ; la télécommande tomba au sol, un portail s’ouvrit, et tous deux furent transportés dans un village abandonné.",
+        histoire9:"Avec toutes ces informations à digérer, notre héros perdit à nouveau connaissance. Il n’entendit qu’un battement d’ailes, comme si un camion s’envolait. Pourtant, la chaleur qui se dégageait de ce \"trois tonnes\" ne pouvait signifier qu’une chose : un dragon se tenait à côté de lui.",
+        histoire10:"À son réveil, l’homme âgé avait disparu. Il ne restait que lui, un village en ruines… et un point d’exclamation flottant devant lui, accompagné de cette inscription : « Sauvez l’oncle ».",
+        histoire11:"Notre héros comprit que cet oncle était en effet la seule manière de retourner dans le monde réel.",
+        histoire12:"Ainsi, dans un élan de courage et de désespoir, il se mit en route pour commencer son aventure dans le monde fantastique de Satis-Kingdom !"
     },
     en: {
         button: "Français",
@@ -87,7 +99,19 @@ const translations = {
         installer:"Download",
         contact:"Contact us",
         histoire_page:"Story of the game",
-        big_installer:"DOWNLOAD ME !"
+        big_installer:"DOWNLOAD ME !",
+        histoire1:"Once upon a time, in a land far, far away, there lived a young man who had grown tired of life in the 21st century, where pollution and noise dictated the rhythm of his daily routine. As a teenager, he craved freedom and a reconnection with nature. One day, while picking up lunch at a bakery near his school, he stumbled upon an advertisement offering a digital detox vacation right in his own city, and at a low price! ",
+        histoire2:"Fearing the opportunity might never come again, and caught in a moment of impulsiveness, he decided not to return to class that afternoon and instead embrace the call of freedom.",
+        histoire3:"After taking several trams, our hero finally arrived at the long-awaited destination. Towering ochre-brick buildings loomed before him, but his true goal lay nestled between these two red giants. Although it was well past noon, the narrow street was lit only by the faint reflections from the windows opposite, so faint that he couldn’t even see the end of the alleyway.",
+        histoire4:"With a knot in his stomach, he considered turning back. But the hope of a better life softened his fear, and he crept forward, quiet as a mouse. He had barely taken ten steps when he felt a presence behind him and before he could turn around, everything went black…",
+        histoire5:"To him, the blackout seemed to last only a second. Yet when he came to, he found himself in a completely different place, where asphalt and skyscrapers had been replaced by meadows and towering pines.",
+        histoire6:"Though oddly familiar, the place no longer resembled the real world, but instead felt like a patchwork of his favorite games the ones he spent so much time in, blurring the lines between fantasy and reality.",
+        histoire7:"He eventually made his way out of the forest and into the light. But when he looked up, there was no sun, no clouds and yet, it felt like midday. Hovering in the sky was a single embossed message: “Satis-Kingdom.”",
+        histoire8:"Before he could process it, an old man came running toward him, holding what looked like a remote control. The boy had no time to move aside the man crashed into him, the device hit the ground, a portal opened, and both were sucked into an abandoned village.",
+        histoire9:"Overwhelmed by everything, the boy lost consciousness once more. All he heard was the flapping of wings not like a bird, but like a truck lifting off the ground. And judging by the heat it gave off, there was no doubt: a dragon was standing right next to him.",
+        histoire10:"When he came to, the old man was gone. Only he remained, surrounded by the ruins of a village… and a floating exclamation mark before him, with a message that read: “Save the uncle.”",
+        histoire11:"Our hero realized that this uncle was his only way back to the real world.",
+        histoire12:"And so, in a surge of courage and desperation, he set off to begin his adventure in the fantastical world of Satis-Kingdom!"
     }
 };
 
