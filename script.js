@@ -122,7 +122,17 @@ const translations = {
         alex:"Alexandre\nDUPUIS",
         alex1:"Concepteur Sonore",
         alex2:"",
-        progress_game:"Progression de la conception du jeu"
+        progress_game:"Progression de la conception du jeu",
+        titre_sfin:"Soutenance Finale", // tout trad pour ctrl+c/v pour anglais
+        cont_sfin:"",
+        titre_st2:"Deuxième Soutenance Technique",
+        cont_st2:"",
+        titre_st1:"Première Soutenance Technique",
+        cont_st1:"",
+        titre_sfonc:"Première Soutenance Fonctionnel",
+        cont_sfonc:"",
+        titre_deb:"Debut Du Projet",
+        cont_deb:""
        
 
     },
@@ -175,7 +185,17 @@ const translations = {
         alex:"Alexandre\nDUPUIS",
         alex1:"Sound Designer",
         alex2:"",
-        progress_game:"Progression of the game design"
+        progress_game:"Progression of the game design",
+        titre_sfin:"",
+        cont_sfin:"",
+        titre_st2:"",
+        cont_st2:"",
+        titre_st1:"",
+        cont_st1:"",
+        titre_sfonc:"",
+        cont_sfonc:"",
+        titre_deb:"",
+        cont_deb:""
     }
 };
 
