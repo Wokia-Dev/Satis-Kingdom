@@ -449,7 +449,7 @@ footer {
 
 
 .parchemin {
-    font-family: 'MedievalSharp', cursserifive;
+    font-family: 'MedievalSharp', cursive;
     font-weight: 1000;
     text-align: left;
     color: #5b3e1b;
@@ -462,7 +462,7 @@ footer {
     width: 100%;
     height: 20px;
     background: #8b5a2b;
-    border-radius: 50% / 100%;
+    border-radius:  100%;
 }
 .center_parchemin::before {
     top: -10px;

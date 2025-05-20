@@ -140,7 +140,17 @@ const translations = {
         titre_sfonc:"Première Soutenance Fonctionnel",
         cont_sfonc:"",
         titre_deb:"Debut Du Projet",
-        cont_deb:""
+        cont_deb:"",
+        // page installer 
+        installer_titre:"",
+        telecharger_rap:"",
+        rap1:"",
+        rap2:"",
+        rap3:"",
+        rap4:"",
+        rap5:"",
+        rap6:"",
+        rap7:"",
        
 
     },
@@ -240,6 +250,17 @@ function updateContent() {
 
 updateContent();
 
+
+function loadPDF() // pour le pdf en anglais / fr
+{
+    if (currentLanguage === 'fr') {
+        window.open('test.pdf','_blank')
+    }
+    else {
+        window.open('images/equipe.jpg','_blank')
+    }
+    
+}
 
 window.addEventListener('scroll', () => {
     const lien = document.getElementById('installation_bouton');
