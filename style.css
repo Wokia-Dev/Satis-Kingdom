@@ -390,7 +390,7 @@ footer {
     width: 50%;
     padding: 10px 40px;
     box-sizing: border-box;
-    transition: 2s;
+    transition: 1s;
 }
 .timeline-item:nth-child(odd):hover{
     transform: scale(1.3);
@@ -691,7 +691,7 @@ footer {
     from {opacity: .4}
     to {opacity: 1}
 }
-/* Title and description */
+
 .title {
     color: white;
     font-size: 20px;
@@ -713,7 +713,7 @@ footer {
     animation: fade-in 1.5s;
 }
 
-/* Fade-in effect */
+
 @keyframes fade-in {
     from {opacity: 0;}
     to {opacity: 1;}

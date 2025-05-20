@@ -1,5 +1,11 @@
 ﻿let slidesIndex = 1;
-let currentLanguage = 'fr';
+if (!localStorage.getItem('premiereVisite'))
+{
+    localStorage.setItem('language','fr');
+    localStorage.setItem('premiereVisite','true')
+}
+
+let currentLanguage = localStorage.getItem('language');
 
 const titles = ["Titre 1", "Titre 2", "Titre 3"];
 const descriptions = ["Je suis francais 1 ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit tortor quis aliquam pulvinar. In cursus tincidunt magna, eget feugiat velit tincidunt sit amet. Nunc molestie tellus eget urna bibendum, ac efficitur urna pretium. Mauris eu posuere elit. Nunc ac sollicitudin dui, sit amet feugiat risus. Quisque convallis sagittis velit sit amet facilisis. Donec viverra ante suscipit, aliquet ligula et, congue eros. Mauris cursus pharetra fermentum. Ut sodales leo ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam ut ultricies dolor, sit amet ullamcorper quam. Nam sed varius neque.",
@@ -106,6 +112,8 @@ const translations = {
         histoire10:"À son réveil, l’homme âgé avait disparu. Il ne restait que lui, un village en ruines… et un point d’exclamation flottant devant lui, accompagné de cette inscription : « Sauvez l’oncle ».",
         histoire11:"Notre héros comprit que cet oncle était en effet la seule manière de retourner dans le monde réel.",
         histoire12:"Ainsi, dans un élan de courage et de désespoir, il se mit en route pour commencer son aventure dans le monde fantastique de Satis-Kingdom !",
+        // page a propos
+        a_propos_titre:"A propos de nous",
         nom_team:"L'Equipe 404-Social-Life-Not-Found",
         raph:"Raphael\nCHANCE" ,
         raph1:"Directeur Artistique",
@@ -121,7 +129,7 @@ const translations = {
         q_s2:"Concepteur Narratif",
         alex:"Alexandre\nDUPUIS",
         alex1:"Concepteur Sonore",
-        alex2:"",
+        alex2:"Programmeur IA ",
         progress_game:"Progression de la conception du jeu",
         titre_sfin:"Soutenance Finale", // tout trad pour ctrl+c/v pour anglais
         cont_sfin:"",
@@ -169,6 +177,8 @@ const translations = {
         histoire10:"When he came to, the old man was gone. Only he remained, surrounded by the ruins of a village… and a floating exclamation mark before him, with a message that read: “Save the uncle.”",
         histoire11:"Our hero realized that this uncle was his only way back to the real world.",
         histoire12:"And so, in a surge of courage and desperation, he set off to begin his adventure in the fantastical world of Satis-Kingdom!",
+        // page a propos
+        a_propos_titre:"About us",
         nom_team:"The 404-Social-Life-Not-Found team",
         raph:"Raphael\nCHANCE" ,
         raph1:"Art Director",
@@ -184,7 +194,7 @@ const translations = {
         q_s2:"Narrative Designer",
         alex:"Alexandre\nDUPUIS",
         alex1:"Sound Designer",
-        alex2:"",
+        alex2:"AI Programmer",
         progress_game:"Progression of the game design",
         titre_sfin:"",
         cont_sfin:"",
@@ -202,10 +212,22 @@ const translations = {
 
 // Fonction pour changer la langue
 function toggleLanguage() {
-    currentLanguage = currentLanguage === 'fr' ? 'en' : 'fr';
+    if (currentLanguage === 'fr') {
+        currentLanguage = 'en';
+        localStorage.setItem('language','en');
+    }
+    else {
+        currentLanguage = 'fr';
+        localStorage.setItem('language','fr');
+    }
     updateContent();
 }
 
+/*
+window.addEventListener("load",function() { // si faut faire un trux quand on charge une page
+    updateContent;
+}) // au final pas utilse comme on appel déjà updateContent mais on sait jamais 
+*/
 function updateContent() {
     const elements = document.querySelectorAll("[data-key]");
     elements.forEach(el => {
@@ -228,5 +250,8 @@ window.addEventListener('scroll', () => {
       lien.classList.remove('scroll_installer');
     }
   });
+
+
+
   
   
