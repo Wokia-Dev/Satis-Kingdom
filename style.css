@@ -404,11 +404,11 @@ footer {
     }
 .timeline-item:nth-child(odd) {
     left: 0;
-    text-align: right;
+    text-align: center;
 }
 .timeline-item:nth-child(even) {
     left: 50%;
-    text-align: left;
+    text-align: center;
 }
 .timeline-item:nth-child(odd) .timeline-content{
     background: linear-gradient(0.25turn, #68d44a, #67a935, #488817);
@@ -444,6 +444,27 @@ footer {
     border-radius: 20%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.texte-timeline {
+    text-align: center;
+    white-space: pre-line;
+}
+
+.timeline-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.timeline-images img {
+    width: 30%;
+    margin: 3px;
+    transition: 300ms;
+    border-radius: 5%;
+}
+.timeline-images img:hover {
+    transform: scale(1.7);
+}
+
 
 /* Pour la partie histoire / parchemin */ 
 

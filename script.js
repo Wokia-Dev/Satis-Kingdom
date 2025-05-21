@@ -1,11 +1,11 @@
 ﻿let slidesIndex = 1;
-if (!localStorage.getItem('premiereVisite'))
+if (!localStorage.getItem("premiereVisite"))
 {
-    localStorage.setItem('language','fr');
-    localStorage.setItem('premiereVisite','true')
+    localStorage.setItem("language","fr");
+    localStorage.setItem("premiereVisite","true")
 }
 
-let currentLanguage = localStorage.getItem('language');
+let currentLanguage = localStorage.getItem("language");
 
 const titles = ["Titre 1", "Titre 2", "Titre 3"];
 const descriptions = ["Je suis francais 1 ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit tortor quis aliquam pulvinar. In cursus tincidunt magna, eget feugiat velit tincidunt sit amet. Nunc molestie tellus eget urna bibendum, ac efficitur urna pretium. Mauris eu posuere elit. Nunc ac sollicitudin dui, sit amet feugiat risus. Quisque convallis sagittis velit sit amet facilisis. Donec viverra ante suscipit, aliquet ligula et, congue eros. Mauris cursus pharetra fermentum. Ut sodales leo ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam ut ultricies dolor, sit amet ullamcorper quam. Nam sed varius neque.",
@@ -140,17 +140,22 @@ const translations = {
         titre_sfonc:"Première Soutenance Fonctionnel",
         cont_sfonc:"",
         titre_deb:"Debut Du Projet",
-        cont_deb:"",
+        cont_deb:"Lors de la création des groupes, chaque membre de l’équipe cherchait des personnes ambitieuses afin de pouvoir donner le meilleur de soi-même dans ce projet de S2.\nAu début de l’année scolaire 2024, les jeux auxquels notre équipe jouait principalement étaient Satisfactory et Stardew Valley : deux jeux en apparence totalement opposés, mais qui partageaient le même objectif, se détendre en jouant.\nLe premier demandait beaucoup de réflexion dans la logistique de sa construction par-dessus la nature, tandis que le second était plus relaxant, plaçant le joueur au cœur de la nature sans l’abîmer.\nNotre équipe a donc compris que ce qui rend un jeu satisfaisant à jouer, c’est la construction de bâtiments, l’exploration, et la présence de la nature, tout en restant simple à comprendre.\nC’est ainsi qu’est né le projet Satis-Kingdom : un jeu où il faut construire des éléments tout en explorant des environnements naturels, avec une prise en main facile.\nCe fil conducteur sera celui qui nous guidera jusqu’au bout de ce projet.",
         // page installer 
-        installer_titre:"",
-        telecharger_rap:"",
-        rap1:"",
-        rap2:"",
-        rap3:"",
-        rap4:"",
-        rap5:"",
-        rap6:"",
-        rap7:"",
+        installer_titre:"Installer Satis-Kingdom",
+        telecharger_rap:"Cahier des charges, rapports et plans de soutenance",
+        rap1:"Cahier Des Charges",
+        rap2:"Rapport Technique 1",
+        rap3:"Plan Soutenance Technique 1",
+        rap4:"Rapport Technique 2",
+        rap5:"Plan Soutenance Technique 2",
+        rap6:"Rapport Final",
+        rap7:"Plan Soutenance Final",
+        rap8:"Sites Et Logiciels Utilisés",
+        // contact
+        contact_title:"Nous contacter",
+        mail_contact:"Contactez nous par mail ou sur discord !"
+        
        
 
     },
@@ -215,20 +220,35 @@ const translations = {
         titre_sfonc:"",
         cont_sfonc:"",
         titre_deb:"",
-        cont_deb:""
+        cont_deb:"When the groups were being formed, each team member was looking for ambitious people in order to give their best in this S2 project.\nAt the start of the 2024 school year, the games our team played the most were Satisfactory and Stardew Valley, two games that seem completely opposite at first glance, but shared the same goal: to relax while playing.\nThe first required a lot of planning and logistical thinking to build structures on top of nature, while the second was more relaxing, placing the player in harmony with nature without harming it.\nOur team realized that what makes a game satisfying to play is the combination of building, exploration, and the presence of nature, all while keeping things simple to understand.\nThat’s how the Satis-Kingdom project was born: a game where players build while exploring natural environments, with an easy-to-grasp gameplay.\nThis guiding principle will lead us through to the end of the project.",
+        // page installer 
+        installer_titre: "Install Satis-Kingdom",
+        telecharger_rap: "Specifications, reports and soutenances plans",
+        rap1: "Technical Specifications",
+        rap2: "Technical Report 1",
+        rap3: "Technical Soutenance Plan 1",
+        rap4: "Technical Report 2",
+        rap5: "Technical Soutenance Plan 2",
+        rap6: "Final Report",
+        rap7: "Final Soutenance Plan",
+        rap8: "Sites and Software Used",
+        // contact
+        contact_title: "Contact us",
+        mail_contact: "Contact us by mail or on discord!"
+
     }
 };
 
 
 // Fonction pour changer la langue
 function toggleLanguage() {
-    if (currentLanguage === 'fr') {
-        currentLanguage = 'en';
-        localStorage.setItem('language','en');
+    if (currentLanguage === "fr") {
+        currentLanguage = "en";
+        localStorage.setItem("language","en");
     }
     else {
-        currentLanguage = 'fr';
-        localStorage.setItem('language','fr');
+        currentLanguage = "fr";
+        localStorage.setItem("language","fr");
     }
     updateContent();
 }
@@ -253,22 +273,22 @@ updateContent();
 
 function loadPDF() // pour le pdf en anglais / fr
 {
-    if (currentLanguage === 'fr') {
-        window.open('test.pdf','_blank')
+    if (currentLanguage === "fr") {
+        window.open("images/test.pdf","_blank")
     }
     else {
-        window.open('images/equipe.jpg','_blank')
+        window.open("images/equipe.jpg","_blank")
     }
     
 }
 
-window.addEventListener('scroll', () => {
-    const lien = document.getElementById('installation_bouton');
+window.addEventListener("scroll", () => {
+    const lien = document.getElementById("installation_bouton");
   
     if (window.scrollY > 50) {
-      lien.classList.add('scroll_installer');
+      lien.classList.add("scroll_installer");
     } else {
-      lien.classList.remove('scroll_installer');
+      lien.classList.remove("scroll_installer");
     }
   });
 
