@@ -462,7 +462,7 @@ footer {
     border-radius: 5%;
 }
 .timeline-images img:hover {
-    transform: scale(1.7);
+    transform: scale(3);
 }
 
 
