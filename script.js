@@ -149,7 +149,7 @@ const translations = {
         rap3:"Plan Soutenance Technique 1",
         rap4:"Rapport Technique 2",
         rap5:"Plan Soutenance Technique 2",
-        rap6:"Rapport Final",
+        rap6:"Rapport Finale",
         rap7:"Plan Soutenance Final",
         rap8:"Sites Et Logiciels Utilisés",
         // contact
@@ -216,7 +216,7 @@ const translations = {
         titre_st2:"",
         cont_st2:"",
         titre_st1:"",
-        cont_st1:"For this first presentation, we were expected to have started coding. The game had its first mechanics, including player movement; however, there were still no attacks or assets implemented for our player. The map was still in its early stages, with only the village present and no other game zones yet. All elements external to programming were ready to be implemented, such as the assets, the story, and the game’s music.\nThe website had its initial structure, but was still far from what it is today in terms of visuals — it was a static site with no visual identity.",
+        cont_st1:"For this first presentation, we were expected to have started coding. The game had its first mechanics, including player movement; however, there were still no attacks or assets implemented for our player. The map was still in its early stages, with only the village present and no other game zones yet. All elements external to programming were ready to be implemented, such as the assets, the story, and the game’s music.\nThe website had its initial structure, but was still far from what it is today in terms of visuals, it was a static site with no visual identity.",
         titre_sfonc:"",
         cont_sfonc:"In order to organize ourselves so that our project would run as smoothly as possible, we assigned the different tasks to each member of our team, as shown in the table below.\nAt that time, since we were not yet able to start coding, most of our work was focused on preparing for the development phase in the second semester.\nDuring this period, we started creating assets, writing the story, developing the game's sound atmosphere, thinking about the gameplay we wanted, as well as the quests and above all, learning the basics of Unity, since only one of the five team members had used it before.",
         titre_deb:"",
@@ -274,10 +274,10 @@ updateContent();
 function loadPDF() // pour le pdf en anglais / fr
 {
     if (currentLanguage === "fr") {
-        window.open("images/test.pdf","_blank")
+        window.open("images/Manuel_fr.pdf","_blank")
     }
     else {
-        window.open("images/equipe.jpg","_blank")
+        window.open("images/Manuel_fr.pdf","_blank")
     }
     
 }

@@ -348,6 +348,7 @@ footer {
     margin: 0;
     color: #5b3e1b;
     font-size: 160%;
+    white-space: pre-line;
 }
 
 .photo_perso li {
