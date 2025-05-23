@@ -1,11 +1,11 @@
 ﻿let slidesIndex = 1;
-if (!localStorage.getItem("premiereVisite"))
+if (!sessionStorage.getItem("premiereVisite"))
 {
-    localStorage.setItem("language","fr");
-    localStorage.setItem("premiereVisite","true")
+    sessionStorage.setItem("language","fr");
+    sessionStorage.setItem("premiereVisite","true")
 }
 
-let currentLanguage = localStorage.getItem("language");
+let currentLanguage = sessionStorage.getItem("language");
 
 const titles = ["Titre 1", "Titre 2", "Titre 3"];
 const descriptions = ["Je suis francais 1 ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit tortor quis aliquam pulvinar. In cursus tincidunt magna, eget feugiat velit tincidunt sit amet. Nunc molestie tellus eget urna bibendum, ac efficitur urna pretium. Mauris eu posuere elit. Nunc ac sollicitudin dui, sit amet feugiat risus. Quisque convallis sagittis velit sit amet facilisis. Donec viverra ante suscipit, aliquet ligula et, congue eros. Mauris cursus pharetra fermentum. Ut sodales leo ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam ut ultricies dolor, sit amet ullamcorper quam. Nam sed varius neque.",
@@ -136,7 +136,7 @@ const translations = {
         titre_st2:"Deuxième Soutenance Technique",
         cont_st2:"La grande majorité des implémentations des mécaniques du jeu ont été effectué. Il reste cependant des petits trucs à droits à gauche comme les quêtes que doit suivre le joueur afin de rendre le jeu pleinement jouable. Quand au site on a quelque chose de très statique mais qui a pour objectif d'être plus attrayant pour la suite.",
         titre_st1:"Première Soutenance Technique",
-        cont_st1:"Les premières lignes de codes sont désormais présente pour le jeu et pour le site web. Cela reste cependant que le début car il reste un semestre de travail sur ce projet",
+        cont_st1:"Pour cette première soutenance, nous devions avoir commencé à coder. Ainsi, le jeu disposait de ses premières mécaniques, notamment les mouvements du joueur ; cependant, il n’y avait encore aucune attaque ni aucun asset implémenté pour notre joueur. La carte en était encore à ses débuts, avec la présence du village, mais sans aucune autre zone du jeu. Tous les éléments extérieurs à la programmation étaient prêts à être implémentés, comme les assets, l’histoire et la musique du jeu.\nLe site web avait sa première structure, mais restait très éloigné, visuellement, de ce qu’il est aujourd’hui, avec un site statique sans identité visuelle.",
         titre_sfonc:"Première Soutenance Fonctionnel",
         cont_sfonc:"Dans l’objectif de nous organiser afin que notre projet se déroule au mieux, nous avons réparti les différentes tâches entre les membres de notre équipe, comme indiqué dans le tableau ci-dessous.\nÉtant donné qu’à cette période nous ne pouvions pas encore coder, la grande majorité de notre travail consistait à préparer la phase de codage du second semestre.\nEn effet, durant cette période, nous avons commencé à créer les assets, écrire l’histoire, développer l’ambiance sonore du jeu, réfléchir au gameplay souhaité ainsi qu’aux quêtes, et surtout apprendre les bases de Unity, car un seul membre de l’équipe l’avait déjà utilisé auparavant.",
         titre_deb:"Debut Du Projet",
@@ -216,7 +216,7 @@ const translations = {
         titre_st2:"",
         cont_st2:"",
         titre_st1:"",
-        cont_st1:"",
+        cont_st1:"For this first presentation, we were expected to have started coding. The game had its first mechanics, including player movement; however, there were still no attacks or assets implemented for our player. The map was still in its early stages, with only the village present and no other game zones yet. All elements external to programming were ready to be implemented, such as the assets, the story, and the game’s music.\nThe website had its initial structure, but was still far from what it is today in terms of visuals — it was a static site with no visual identity.",
         titre_sfonc:"",
         cont_sfonc:"In order to organize ourselves so that our project would run as smoothly as possible, we assigned the different tasks to each member of our team, as shown in the table below.\nAt that time, since we were not yet able to start coding, most of our work was focused on preparing for the development phase in the second semester.\nDuring this period, we started creating assets, writing the story, developing the game's sound atmosphere, thinking about the gameplay we wanted, as well as the quests and above all, learning the basics of Unity, since only one of the five team members had used it before.",
         titre_deb:"",
@@ -244,11 +244,11 @@ const translations = {
 function toggleLanguage() {
     if (currentLanguage === "fr") {
         currentLanguage = "en";
-        localStorage.setItem("language","en");
+        sessionStorage.setItem("language","en");
     }
     else {
         currentLanguage = "fr";
-        localStorage.setItem("language","fr");
+        sessionStorage.setItem("language","fr");
     }
     updateContent();
 }
