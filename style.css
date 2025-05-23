@@ -348,6 +348,7 @@ footer {
     margin: 0;
     color: #5b3e1b;
     font-size: 160%;
+    white-space: pre-line;
 }
 
 .photo_perso li {
@@ -390,7 +391,7 @@ footer {
     width: 50%;
     padding: 10px 40px;
     box-sizing: border-box;
-    transition: 2s;
+    transition: 1s;
 }
 .timeline-item:nth-child(odd):hover{
     transform: scale(1.3);
@@ -404,11 +405,11 @@ footer {
     }
 .timeline-item:nth-child(odd) {
     left: 0;
-    text-align: right;
+    text-align: center;
 }
 .timeline-item:nth-child(even) {
     left: 50%;
-    text-align: left;
+    text-align: center;
 }
 .timeline-item:nth-child(odd) .timeline-content{
     background: linear-gradient(0.25turn, #68d44a, #67a935, #488817);
@@ -445,11 +446,32 @@ footer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.texte-timeline {
+    text-align: center;
+    white-space: pre-line;
+}
+
+.timeline-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.timeline-images img {
+    width: 30%;
+    margin: 3px;
+    transition: 300ms;
+    border-radius: 5%;
+}
+.timeline-images img:hover {
+    transform: scale(3);
+}
+
+
 /* Pour la partie histoire / parchemin */ 
 
 
 .parchemin {
-    font-family: 'MedievalSharp', cursserifive;
+    font-family: 'MedievalSharp', cursive;
     font-weight: 1000;
     text-align: left;
     color: #5b3e1b;
@@ -462,7 +484,7 @@ footer {
     width: 100%;
     height: 20px;
     background: #8b5a2b;
-    border-radius: 50% / 100%;
+    border-radius:  100%;
 }
 .center_parchemin::before {
     top: -10px;
@@ -691,7 +713,7 @@ footer {
     from {opacity: .4}
     to {opacity: 1}
 }
-/* Title and description */
+
 .title {
     color: white;
     font-size: 20px;
@@ -713,7 +735,7 @@ footer {
     animation: fade-in 1.5s;
 }
 
-/* Fade-in effect */
+
 @keyframes fade-in {
     from {opacity: 0;}
     to {opacity: 1;}

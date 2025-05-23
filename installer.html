@@ -15,7 +15,7 @@
         <a href="histoire.html" data-key="histoire">Histoire du jeu</a>
         <a href="a_propos.html" data-key="a_propos">À propos</a>
         <a href="installer.html" data-key="installer" id="page-actuel">Installer</a>
-        <a href="test.pdf" target="_blank" data-key="manuel">Manuel</a>
+        <a href="#" onclick="loadPDF()" data-key="manuel">Manuel</a>
         <a href="contact.html" data-key="contact">Nous contacter</a>
         <button id="language-btn" onclick="toggleLanguage()">Changer de langue</button>
     </nav>
@@ -24,24 +24,25 @@
         <img src="images/logoJeu.png" alt="logo du jeu" id="logo-banniere">
     </div>
     <section id="transition">
-        <h1 id="accroche" >Installer Satis-Kingdom</h1>
+        <h1 id="accroche" data-key="installer_titre">Installer Satis-Kingdom</h1>
         <br>
     </section>
     <main>
         <section style="left: 30%;">
-            <a target="_blank" href="tqt.zip" download="tqt.zip" style="display: flex; justify-content: center;"><img src="images/installation_image2.png" alt="logo pour installer le jeu" class="installation_image"></a>
+            <a target="_blank" href="Install_SATIS-KINGDOM.exe" download="Install_SATIS-KINGDOM.exe" style="display: flex; justify-content: center;"><img src="images/installation_image2.png" alt="logo pour installer le jeu" class="installation_image"></a>
         </section>
         <img src="images/tronc.png" alt="un tronc de separation" class="tronc" title="Je s'appelle groot">
         <section class="section_rapport">
-            <h1><u>Téléchargement des différents rapports </u></h1>
+            <h1><u data-key="telecharger_rap">Téléchargement des différents rapports </u></h1>
             <div class="download_box">
-                <a href="images/Soutenance_fonctionnel.pdf" target="_blank">Rapport soutenance fonctionnel</a>
-                <a href="images/Soutenance_technique_1.pdf" target="_blank">Rapport soutenance technique 1</a>
-                <a href="images/Soutenance_technique_2.pdf" target="_blank">Rapport soutenance technique 2</a>
-                <a href="">Rapport 4</a>
-                <a href="">Rapport 5</a>
-                <a href="">Rapport 6</a>
-                <a href="">Rapport 7</a>
+                <a href="images/Soutenance_fonctionnel.pdf" target="_blank" data-key="rap1">Rapport soutenance fonctionnel</a>
+                <a href="images/Soutenance_technique_1.pdf" target="_blank" data-key="rap2">Rapport soutenance technique 1</a>
+                <a href="images/plan1.pdf" target="_blank" data-key="rap3">Rapport soutenance technique 2</a>
+                <a href="images/Soutenance_technique_2.pdf" data-key="rap4">Rapport 4</a>
+                <a href="images/plan2.pdf" data-key="rap5">Rapport 5</a>
+                <a href="" data-key="rap6">Rapport 6</a>
+                <a href="" data-key="rap7">Rapport 7</a>
+                <a href="" data-key="rap8">Rapport 8</a>
             </div>
 
         </section>

@@ -1,5 +1,11 @@
 ﻿let slidesIndex = 1;
-let currentLanguage = 'fr';
+if (!sessionStorage.getItem("premiereVisite"))
+{
+    sessionStorage.setItem("language","fr");
+    sessionStorage.setItem("premiereVisite","true")
+}
+
+let currentLanguage = sessionStorage.getItem("language");
 
 const titles = ["Titre 1", "Titre 2", "Titre 3"];
 const descriptions = ["Je suis francais 1 ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit tortor quis aliquam pulvinar. In cursus tincidunt magna, eget feugiat velit tincidunt sit amet. Nunc molestie tellus eget urna bibendum, ac efficitur urna pretium. Mauris eu posuere elit. Nunc ac sollicitudin dui, sit amet feugiat risus. Quisque convallis sagittis velit sit amet facilisis. Donec viverra ante suscipit, aliquet ligula et, congue eros. Mauris cursus pharetra fermentum. Ut sodales leo ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam ut ultricies dolor, sit amet ullamcorper quam. Nam sed varius neque.",
@@ -106,6 +112,8 @@ const translations = {
         histoire10:"À son réveil, l’homme âgé avait disparu. Il ne restait que lui, un village en ruines… et un point d’exclamation flottant devant lui, accompagné de cette inscription : « Sauvez l’oncle ».",
         histoire11:"Notre héros comprit que cet oncle était en effet la seule manière de retourner dans le monde réel.",
         histoire12:"Ainsi, dans un élan de courage et de désespoir, il se mit en route pour commencer son aventure dans le monde fantastique de Satis-Kingdom !",
+        // page a propos
+        a_propos_titre:"A propos de nous",
         nom_team:"L'Equipe 404-Social-Life-Not-Found",
         raph:"Raphael\nCHANCE" ,
         raph1:"Directeur Artistique",
@@ -121,18 +129,33 @@ const translations = {
         q_s2:"Concepteur Narratif",
         alex:"Alexandre\nDUPUIS",
         alex1:"Concepteur Sonore",
-        alex2:"",
+        alex2:"Programmeur IA ",
         progress_game:"Progression de la conception du jeu",
         titre_sfin:"Soutenance Finale", // tout trad pour ctrl+c/v pour anglais
         cont_sfin:"",
         titre_st2:"Deuxième Soutenance Technique",
-        cont_st2:"",
+        cont_st2:"La grande majorité des implémentations des mécaniques du jeu ont été effectué. Il reste cependant des petits trucs à droits à gauche comme les quêtes que doit suivre le joueur afin de rendre le jeu pleinement jouable. Quand au site on a quelque chose de très statique mais qui a pour objectif d'être plus attrayant pour la suite.",
         titre_st1:"Première Soutenance Technique",
-        cont_st1:"",
+        cont_st1:"Pour cette première soutenance, nous devions avoir commencé à coder. Ainsi, le jeu disposait de ses premières mécaniques, notamment les mouvements du joueur ; cependant, il n’y avait encore aucune attaque ni aucun asset implémenté pour notre joueur. La carte en était encore à ses débuts, avec la présence du village, mais sans aucune autre zone du jeu. Tous les éléments extérieurs à la programmation étaient prêts à être implémentés, comme les assets, l’histoire et la musique du jeu.\nLe site web avait sa première structure, mais restait très éloigné, visuellement, de ce qu’il est aujourd’hui, avec un site statique sans identité visuelle.",
         titre_sfonc:"Première Soutenance Fonctionnel",
-        cont_sfonc:"",
+        cont_sfonc:"Dans l’objectif de nous organiser afin que notre projet se déroule au mieux, nous avons réparti les différentes tâches entre les membres de notre équipe, comme indiqué dans le tableau ci-dessous.\nÉtant donné qu’à cette période nous ne pouvions pas encore coder, la grande majorité de notre travail consistait à préparer la phase de codage du second semestre.\nEn effet, durant cette période, nous avons commencé à créer les assets, écrire l’histoire, développer l’ambiance sonore du jeu, réfléchir au gameplay souhaité ainsi qu’aux quêtes, et surtout apprendre les bases de Unity, car un seul membre de l’équipe l’avait déjà utilisé auparavant.",
         titre_deb:"Debut Du Projet",
-        cont_deb:""
+        cont_deb:"Lors de la création des groupes, chaque membre de l’équipe cherchait des personnes ambitieuses afin de pouvoir donner le meilleur de soi-même dans ce projet de S2.\nAu début de l’année scolaire 2024, les jeux auxquels notre équipe jouait principalement étaient Satisfactory (1) et Stardew Valley (2) : deux jeux en apparence totalement opposés, mais qui partageaient le même objectif, se détendre en jouant.\nLe premier demandait beaucoup de réflexion dans la logistique de sa construction par-dessus la nature, tandis que le second était plus relaxant, plaçant le joueur au cœur de la nature sans l’abîmer.\nNotre équipe a donc compris que ce qui rend un jeu satisfaisant à jouer, c’est la construction de bâtiments, l’exploration, et la présence de la nature, tout en restant simple à comprendre.\nC’est ainsi qu’est né le projet Satis-Kingdom : un jeu où il faut construire des éléments tout en explorant des environnements naturels, avec une prise en main facile.\nCe fil conducteur sera celui qui nous guidera jusqu’au bout de ce projet.",
+        // page installer 
+        installer_titre:"Installer Satis-Kingdom",
+        telecharger_rap:"Cahier des charges, rapports et plans de soutenance",
+        rap1:"Cahier Des Charges",
+        rap2:"Rapport Technique 1",
+        rap3:"Plan Soutenance Technique 1",
+        rap4:"Rapport Technique 2",
+        rap5:"Plan Soutenance Technique 2",
+        rap6:"Rapport Finale",
+        rap7:"Plan Soutenance Final",
+        rap8:"Sites Et Logiciels Utilisés",
+        // contact
+        contact_title:"Nous contacter",
+        mail_contact:"Contactez nous par mail ou sur discord !"
+        
        
 
     },
@@ -169,6 +192,8 @@ const translations = {
         histoire10:"When he came to, the old man was gone. Only he remained, surrounded by the ruins of a village… and a floating exclamation mark before him, with a message that read: “Save the uncle.”",
         histoire11:"Our hero realized that this uncle was his only way back to the real world.",
         histoire12:"And so, in a surge of courage and desperation, he set off to begin his adventure in the fantastical world of Satis-Kingdom!",
+        // page a propos
+        a_propos_titre:"About us",
         nom_team:"The 404-Social-Life-Not-Found team",
         raph:"Raphael\nCHANCE" ,
         raph1:"Art Director",
@@ -184,28 +209,55 @@ const translations = {
         q_s2:"Narrative Designer",
         alex:"Alexandre\nDUPUIS",
         alex1:"Sound Designer",
-        alex2:"",
+        alex2:"AI Programmer",
         progress_game:"Progression of the game design",
         titre_sfin:"",
         cont_sfin:"",
         titre_st2:"",
         cont_st2:"",
         titre_st1:"",
-        cont_st1:"",
+        cont_st1:"For this first presentation, we were expected to have started coding. The game had its first mechanics, including player movement; however, there were still no attacks or assets implemented for our player. The map was still in its early stages, with only the village present and no other game zones yet. All elements external to programming were ready to be implemented, such as the assets, the story, and the game’s music.\nThe website had its initial structure, but was still far from what it is today in terms of visuals, it was a static site with no visual identity.",
         titre_sfonc:"",
-        cont_sfonc:"",
+        cont_sfonc:"In order to organize ourselves so that our project would run as smoothly as possible, we assigned the different tasks to each member of our team, as shown in the table below.\nAt that time, since we were not yet able to start coding, most of our work was focused on preparing for the development phase in the second semester.\nDuring this period, we started creating assets, writing the story, developing the game's sound atmosphere, thinking about the gameplay we wanted, as well as the quests and above all, learning the basics of Unity, since only one of the five team members had used it before.",
         titre_deb:"",
-        cont_deb:""
+        cont_deb:"When the groups were being formed, each team member was looking for ambitious people in order to give their best in this S2 project.\nAt the start of the 2024 school year, the games our team played the most were Satisfactory (1) and Stardew Valley (2), two games that seem completely opposite at first glance, but shared the same goal: to relax while playing.\nThe first required a lot of planning and logistical thinking to build structures on top of nature, while the second was more relaxing, placing the player in harmony with nature without harming it.\nOur team realized that what makes a game satisfying to play is the combination of building, exploration, and the presence of nature, all while keeping things simple to understand.\nThat’s how the Satis-Kingdom project was born: a game where players build while exploring natural environments, with an easy-to-grasp gameplay.\nThis guiding principle will lead us through to the end of the project.",
+        // page installer 
+        installer_titre: "Install Satis-Kingdom",
+        telecharger_rap: "Specifications, reports and soutenances plans",
+        rap1: "Technical Specifications",
+        rap2: "Technical Report 1",
+        rap3: "Technical Soutenance Plan 1",
+        rap4: "Technical Report 2",
+        rap5: "Technical Soutenance Plan 2",
+        rap6: "Final Report",
+        rap7: "Final Soutenance Plan",
+        rap8: "Sites and Software Used",
+        // contact
+        contact_title: "Contact us",
+        mail_contact: "Contact us by mail or on discord!"
+
     }
 };
 
 
 // Fonction pour changer la langue
 function toggleLanguage() {
-    currentLanguage = currentLanguage === 'fr' ? 'en' : 'fr';
+    if (currentLanguage === "fr") {
+        currentLanguage = "en";
+        sessionStorage.setItem("language","en");
+    }
+    else {
+        currentLanguage = "fr";
+        sessionStorage.setItem("language","fr");
+    }
     updateContent();
 }
 
+/*
+window.addEventListener("load",function() { // si faut faire un trux quand on charge une page
+    updateContent;
+}) // au final pas utilse comme on appel déjà updateContent mais on sait jamais 
+*/
 function updateContent() {
     const elements = document.querySelectorAll("[data-key]");
     elements.forEach(el => {
@@ -219,14 +271,28 @@ function updateContent() {
 updateContent();
 
 
-window.addEventListener('scroll', () => {
-    const lien = document.getElementById('installation_bouton');
+function loadPDF() // pour le pdf en anglais / fr
+{
+    if (currentLanguage === "fr") {
+        window.open("images/Manuel_fr.pdf","_blank")
+    }
+    else {
+        window.open("images/Manuel_fr.pdf","_blank")
+    }
+    
+}
+
+window.addEventListener("scroll", () => {
+    const lien = document.getElementById("installation_bouton");
   
     if (window.scrollY > 50) {
-      lien.classList.add('scroll_installer');
+      lien.classList.add("scroll_installer");
     } else {
-      lien.classList.remove('scroll_installer');
+      lien.classList.remove("scroll_installer");
     }
   });
+
+
+
   
   
