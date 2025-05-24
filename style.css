@@ -465,6 +465,14 @@ footer {
 .timeline-images img:hover {
     transform: scale(3);
 }
+.timeline-images video {
+    width: 30%;
+    margin: 3px;
+    transition: 300ms;
+}
+.timeline-images video:hover {
+    transform: scale(3);
+}
 
 
 /* Pour la partie histoire / parchemin */ 

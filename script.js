@@ -7,11 +7,8 @@ if (!sessionStorage.getItem("premiereVisite"))
 
 let currentLanguage = sessionStorage.getItem("language");
 
-const titles = ["Titre 1", "Titre 2", "Titre 3"];
-const descriptions = ["Je suis francais 1 ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit tortor quis aliquam pulvinar. In cursus tincidunt magna, eget feugiat velit tincidunt sit amet. Nunc molestie tellus eget urna bibendum, ac efficitur urna pretium. Mauris eu posuere elit. Nunc ac sollicitudin dui, sit amet feugiat risus. Quisque convallis sagittis velit sit amet facilisis. Donec viverra ante suscipit, aliquet ligula et, congue eros. Mauris cursus pharetra fermentum. Ut sodales leo ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam ut ultricies dolor, sit amet ullamcorper quam. Nam sed varius neque.",
-    "Je suis francais 2 ipsum dolor sit amet, consectetur adipiscing elit. Nam quam ex, elementum eget congue sit amet, malesuada sed lectus. Maecenas porta aliquet dui vel lacinia. Suspendisse ornare libero ligula, et tincidunt risus varius et. Nunc sapien erat, mollis ut bibendum nec, placerat et ex. Vivamus faucibus ex id pretium gravida. Nam fringilla vehicula scelerisque. Donec et luctus nibh. Suspendisse interdum est vitae urna egestas, vitae aliquet dolor mollis. In id elit ut turpis egestas hendrerit. Integer id tortor leo. Nam a varius dolor, vitae auctor massa. Quisque rhoncus sagittis lobortis. Donec viverra justo ac tristique condimentum. Vestibulum nec hendrerit ex. Curabitur eget tellus ipsum. Aenean finibus mauris non arcu aliquam, at placerat lacus malesuada.",
-    "Je suis francais 3 ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae libero ex. Cras a volutpat ex. Nulla facilisi. Curabitur molestie mauris vel libero lobortis, ut sodales tellus lacinia. Donec in ultricies mi, vitae lacinia nibh. Curabitur ante sem, laoreet aliquet vulputate sit amet, laoreet id tellus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras eget augue et nisi ornare ultrices et quis augue. Etiam vel porttitor ipsum. Donec lacinia ligula vitae bibendum imperdiet. Praesent sit amet condimentum nibh. Nunc metus felis, rhoncus eu commodo sit amet, sagittis ut augue. Pellentesque elementum lectus eu quam posuere euismod."];
-
+const titles = ["Village", "Mobs", "Boss"];
+const descriptions = ["","",""]
 // pas utiliser mais on sait jamais
 const titles_en = ["Title 1", "Title 2", "Titlee 3"];
 const descriptions_en = ["Je suis anglais 1 ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit tortor quis aliquam pulvinar. In cursus tincidunt magna, eget feugiat velit tincidunt sit amet. Nunc molestie tellus eget urna bibendum, ac efficitur urna pretium. Mauris eu posuere elit. Nunc ac sollicitudin dui, sit amet feugiat risus. Quisque convallis sagittis velit sit amet facilisis. Donec viverra ante suscipit, aliquet ligula et, congue eros. Mauris cursus pharetra fermentum. Ut sodales leo ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam ut ultricies dolor, sit amet ullamcorper quam. Nam sed varius neque.",
@@ -93,12 +90,9 @@ const translations = {
         big_installer:"INSTALLEZ MOI !",
         //Page d'accueil (ceux pas encore la)
         trailer:"Je suis le trailer",
-        slide1:"Slide 1 ",
-        slide2:"Slide 2 ",
-        slide3:"Slide 3",
-        titre_slide1:"Titre 1",
-        titre_slide2:"Titre 2",
-        titre_slide3:"Titre 3",
+        capt1:"Rencontre et interagis avec les différents Personnages Non Joueur du village !",
+        capt2:"Combat des créatures hostiles à l'extérieur du village !",
+        capt3:"Arriveras-tu à battre tous les boss de Satis-Kingdom ?",
         // Page histoire
         histoire1:"Il était une fois, dans une contrée lointaine, très lointaine, un jeune homme fatigué de vivre au XXIe siècle, où pollution et nuisances sonores rythmaient son quotidien. En tant qu’adolescent, il avait besoin de liberté et de se reconnecter avec la nature. Un jour, alors qu’il allait chercher son repas dans une boulangerie proche de son école, il tomba sur un panneau publicitaire proposant des vacances déconnectées du monde extérieur, dans sa propre ville, et à petit prix !",
         histoire2:"Craignant que l’occasion ne se représente plus, et dans l’élan d’un choix impulsif, il décida de ne pas retourner en cours cet après-midi-là pour profiter de cette promesse de liberté.",
@@ -132,12 +126,12 @@ const translations = {
         alex2:"Programmeur IA ",
         progress_game:"Progression de la conception du jeu",
         titre_sfin:"Soutenance Finale", // tout trad pour ctrl+c/v pour anglais
-        cont_sfin:"",
+        cont_sfin:"Le projet touche désormais à sa fin. Notre équipe a pris beaucoup de plaisir à réaliser son propre jeu vidéo et est fière du travail qu’elle a accompli, car elle a réussi à respecter son cahier des charges et à surmonter les différentes mésaventures rencontrées au cours de l’année.\nNous avons désormais un jeu jouable, doté d’une identité visuelle propre et d’une histoire captivante. Ces trois éléments étaient au cœur de notre projet et ont été continuellement améliorés jusqu’à aboutir à cette première version de Satis-Kingdom.\nLe site web est lui aussi terminé et contient toutes les informations nécessaires à la promotion et au téléchargement de Satis-Kingdom.",
         titre_st2:"Deuxième Soutenance Technique",
-        cont_st2:"La grande majorité des implémentations des mécaniques du jeu ont été effectué. Il reste cependant des petits trucs à droits à gauche comme les quêtes que doit suivre le joueur afin de rendre le jeu pleinement jouable. Quand au site on a quelque chose de très statique mais qui a pour objectif d'être plus attrayant pour la suite.",
+        cont_st2:"La grande majorité des mécaniques du jeu était implémentée, notamment le multijoueur et l’IA des ennemis. Désormais, bien que les ennemis soient encore représentés par des boules blanches, ils peuvent nous suivre et nous attaquer, au corps à corps ou à distance.\nLe joueur peut également leur infliger des dégâts. Cependant, aucun asset du joueur ou des ennemis n’est encore implémenté, ce qui rend le tout peu visuel.\nLe site s’est très bien développé. La structure qu’il possède à ce stade restera la même jusqu’à la soutenance finale. Toutefois, le site ne contient encore aucune information : il reste à y ajouter tous les boutons, ainsi que les vidéos, images et rapports.",
         titre_st1:"Première Soutenance Technique",
         cont_st1:"Pour cette première soutenance, nous devions avoir commencé à coder. Ainsi, le jeu disposait de ses premières mécaniques, notamment les mouvements du joueur ; cependant, il n’y avait encore aucune attaque ni aucun asset implémenté pour notre joueur. La carte en était encore à ses débuts, avec la présence du village, mais sans aucune autre zone du jeu. Tous les éléments extérieurs à la programmation étaient prêts à être implémentés, comme les assets, l’histoire et la musique du jeu.\nLe site web avait sa première structure, mais restait très éloigné, visuellement, de ce qu’il est aujourd’hui, avec un site statique sans identité visuelle.",
-        titre_sfonc:"Première Soutenance Fonctionnel",
+        titre_sfonc:"Soutenance Fonctionnel",
         cont_sfonc:"Dans l’objectif de nous organiser afin que notre projet se déroule au mieux, nous avons réparti les différentes tâches entre les membres de notre équipe, comme indiqué dans le tableau ci-dessous.\nÉtant donné qu’à cette période nous ne pouvions pas encore coder, la grande majorité de notre travail consistait à préparer la phase de codage du second semestre.\nEn effet, durant cette période, nous avons commencé à créer les assets, écrire l’histoire, développer l’ambiance sonore du jeu, réfléchir au gameplay souhaité ainsi qu’aux quêtes, et surtout apprendre les bases de Unity, car un seul membre de l’équipe l’avait déjà utilisé auparavant.",
         titre_deb:"Debut Du Projet",
         cont_deb:"Lors de la création des groupes, chaque membre de l’équipe cherchait des personnes ambitieuses afin de pouvoir donner le meilleur de soi-même dans ce projet de S2.\nAu début de l’année scolaire 2024, les jeux auxquels notre équipe jouait principalement étaient Satisfactory (1) et Stardew Valley (2) : deux jeux en apparence totalement opposés, mais qui partageaient le même objectif, se détendre en jouant.\nLe premier demandait beaucoup de réflexion dans la logistique de sa construction par-dessus la nature, tandis que le second était plus relaxant, plaçant le joueur au cœur de la nature sans l’abîmer.\nNotre équipe a donc compris que ce qui rend un jeu satisfaisant à jouer, c’est la construction de bâtiments, l’exploration, et la présence de la nature, tout en restant simple à comprendre.\nC’est ainsi qu’est né le projet Satis-Kingdom : un jeu où il faut construire des éléments tout en explorant des environnements naturels, avec une prise en main facile.\nCe fil conducteur sera celui qui nous guidera jusqu’au bout de ce projet.",
@@ -173,12 +167,9 @@ const translations = {
         big_installer:"DOWNLOAD ME !",
         //Page d'accueil (ceux pas encore la)
         trailer:"Je suis le trailer en anglais",
-        slide1:"Slide 1 ",
-        slide2:"Slide 2 ",
-        slide3:"Slide 3",
-        titre_slide1:"Titre 1",
-        titre_slide2:"Titre 2",
-        titre_slide3:"Titre 3",
+        capt1:"Meet and interact with the various Non-Player Characters in the village!",
+        capt2:"Fight hostile creatures outside the village!",
+        capt3:"Can you beat all the bosses in Satis-Kingdom?",
         // Page histoire
         histoire1:"Once upon a time, in a land far, far away, there lived a young man who had grown tired of life in the 21st century, where pollution and noise dictated the rhythm of his daily routine. As a teenager, he craved freedom and a reconnection with nature. One day, while picking up lunch at a bakery near his school, he stumbled upon an advertisement offering a digital detox vacation right in his own city, and at a low price! ",
         histoire2:"Fearing the opportunity might never come again, and caught in a moment of impulsiveness, he decided not to return to class that afternoon and instead embrace the call of freedom.",
@@ -211,15 +202,15 @@ const translations = {
         alex1:"Sound Designer",
         alex2:"AI Programmer",
         progress_game:"Progression of the game design",
-        titre_sfin:"",
-        cont_sfin:"",
-        titre_st2:"",
-        cont_st2:"",
-        titre_st1:"",
+        titre_sfin:"Final Soutenance",
+        cont_sfin:"The project is now coming to an end. Our team greatly enjoyed creating its own video game and is proud of the work it has accomplished, having successfully followed the specifications and overcome the various challenges encountered throughout the year.\nWe now have a playable game, with its own visual identity and a captivating story. These three elements were at the heart of our project and have been continuously improved to produce this first version of Satis-Kingdom.\nThe website is also complete and contains all the necessary information for promoting and downloading Satis-Kingdom.",
+        titre_st2:"2nd Technical Soutenance",
+        cont_st2:"The vast majority of the game’s mechanics had been implemented, mainly multiplayer and enemy AI.\nAt this point, although the enemies are still represented by white spheres, they can follow the player and attack in melee or at range.\nThe player can also deal damage to them. However, no player or enemy assets have been implemented yet, making the visuals quite limited.\nThe website has developed well. The structure it has at this stage will remain the same until the final presentation.\nHowever, the site still contains no information — all buttons, as well as videos, images, and reports, still need to be added.",
+        titre_st1:"1st Technical Soutenance",
         cont_st1:"For this first presentation, we were expected to have started coding. The game had its first mechanics, including player movement; however, there were still no attacks or assets implemented for our player. The map was still in its early stages, with only the village present and no other game zones yet. All elements external to programming were ready to be implemented, such as the assets, the story, and the game’s music.\nThe website had its initial structure, but was still far from what it is today in terms of visuals, it was a static site with no visual identity.",
-        titre_sfonc:"",
+        titre_sfonc:"Functional Soutenance",
         cont_sfonc:"In order to organize ourselves so that our project would run as smoothly as possible, we assigned the different tasks to each member of our team, as shown in the table below.\nAt that time, since we were not yet able to start coding, most of our work was focused on preparing for the development phase in the second semester.\nDuring this period, we started creating assets, writing the story, developing the game's sound atmosphere, thinking about the gameplay we wanted, as well as the quests and above all, learning the basics of Unity, since only one of the five team members had used it before.",
-        titre_deb:"",
+        titre_deb:"Start Of The Project",
         cont_deb:"When the groups were being formed, each team member was looking for ambitious people in order to give their best in this S2 project.\nAt the start of the 2024 school year, the games our team played the most were Satisfactory (1) and Stardew Valley (2), two games that seem completely opposite at first glance, but shared the same goal: to relax while playing.\nThe first required a lot of planning and logistical thinking to build structures on top of nature, while the second was more relaxing, placing the player in harmony with nature without harming it.\nOur team realized that what makes a game satisfying to play is the combination of building, exploration, and the presence of nature, all while keeping things simple to understand.\nThat’s how the Satis-Kingdom project was born: a game where players build while exploring natural environments, with an easy-to-grasp gameplay.\nThis guiding principle will lead us through to the end of the project.",
         // page installer 
         installer_titre: "Install Satis-Kingdom",
