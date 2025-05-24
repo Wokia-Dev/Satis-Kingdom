@@ -89,7 +89,7 @@ const translations = {
         histoire_page:"Histoire du jeu",
         big_installer:"INSTALLEZ MOI !",
         //Page d'accueil (ceux pas encore la)
-        trailer:"Je suis le trailer",
+        trailer:"Profiter de votre aventure tout seul ou avec la personne de votre choix !",
         capt1:"Rencontre et interagis avec les différents Personnages Non Joueur du village !",
         capt2:"Combat des créatures hostiles à l'extérieur du village !",
         capt3:"Arriveras-tu à battre tous les boss de Satis-Kingdom ?",
@@ -166,7 +166,7 @@ const translations = {
         histoire_page:"Story of the game",
         big_installer:"DOWNLOAD ME !",
         //Page d'accueil (ceux pas encore la)
-        trailer:"Je suis le trailer en anglais",
+        trailer:"Enjoy your adventure on your own or with the person of your choice",
         capt1:"Meet and interact with the various Non-Player Characters in the village!",
         capt2:"Fight hostile creatures outside the village!",
         capt3:"Can you beat all the bosses in Satis-Kingdom?",

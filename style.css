@@ -145,9 +145,6 @@ body {
         transform: rotateX(360);
         opacity: 0;
     }
-    0.02% {
-        transform: translateY(-2000px);
-    }
     100% {
         
     }
@@ -156,6 +153,7 @@ body {
 @media (max-width:670px) {
     #logo-banniere {
         animation: logo-banniere-escape 5000s ease-in-out 1;
+		z-index:-100;
     }
 }
 
