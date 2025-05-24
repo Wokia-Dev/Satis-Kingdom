@@ -7,11 +7,8 @@ if (!sessionStorage.getItem("premiereVisite"))
 
 let currentLanguage = sessionStorage.getItem("language");
 
-const titles = ["Titre 1", "Titre 2", "Titre 3"];
-const descriptions = ["Je suis francais 1 ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit tortor quis aliquam pulvinar. In cursus tincidunt magna, eget feugiat velit tincidunt sit amet. Nunc molestie tellus eget urna bibendum, ac efficitur urna pretium. Mauris eu posuere elit. Nunc ac sollicitudin dui, sit amet feugiat risus. Quisque convallis sagittis velit sit amet facilisis. Donec viverra ante suscipit, aliquet ligula et, congue eros. Mauris cursus pharetra fermentum. Ut sodales leo ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam ut ultricies dolor, sit amet ullamcorper quam. Nam sed varius neque.",
-    "Je suis francais 2 ipsum dolor sit amet, consectetur adipiscing elit. Nam quam ex, elementum eget congue sit amet, malesuada sed lectus. Maecenas porta aliquet dui vel lacinia. Suspendisse ornare libero ligula, et tincidunt risus varius et. Nunc sapien erat, mollis ut bibendum nec, placerat et ex. Vivamus faucibus ex id pretium gravida. Nam fringilla vehicula scelerisque. Donec et luctus nibh. Suspendisse interdum est vitae urna egestas, vitae aliquet dolor mollis. In id elit ut turpis egestas hendrerit. Integer id tortor leo. Nam a varius dolor, vitae auctor massa. Quisque rhoncus sagittis lobortis. Donec viverra justo ac tristique condimentum. Vestibulum nec hendrerit ex. Curabitur eget tellus ipsum. Aenean finibus mauris non arcu aliquam, at placerat lacus malesuada.",
-    "Je suis francais 3 ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae libero ex. Cras a volutpat ex. Nulla facilisi. Curabitur molestie mauris vel libero lobortis, ut sodales tellus lacinia. Donec in ultricies mi, vitae lacinia nibh. Curabitur ante sem, laoreet aliquet vulputate sit amet, laoreet id tellus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras eget augue et nisi ornare ultrices et quis augue. Etiam vel porttitor ipsum. Donec lacinia ligula vitae bibendum imperdiet. Praesent sit amet condimentum nibh. Nunc metus felis, rhoncus eu commodo sit amet, sagittis ut augue. Pellentesque elementum lectus eu quam posuere euismod."];
-
+const titles = ["Village", "Mobs", "Boss"];
+const descriptions = ["","",""]
 // pas utiliser mais on sait jamais
 const titles_en = ["Title 1", "Title 2", "Titlee 3"];
 const descriptions_en = ["Je suis anglais 1 ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit tortor quis aliquam pulvinar. In cursus tincidunt magna, eget feugiat velit tincidunt sit amet. Nunc molestie tellus eget urna bibendum, ac efficitur urna pretium. Mauris eu posuere elit. Nunc ac sollicitudin dui, sit amet feugiat risus. Quisque convallis sagittis velit sit amet facilisis. Donec viverra ante suscipit, aliquet ligula et, congue eros. Mauris cursus pharetra fermentum. Ut sodales leo ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam ut ultricies dolor, sit amet ullamcorper quam. Nam sed varius neque.",
@@ -93,12 +90,9 @@ const translations = {
         big_installer:"INSTALLEZ MOI !",
         //Page d'accueil (ceux pas encore la)
         trailer:"Je suis le trailer",
-        slide1:"Slide 1 ",
-        slide2:"Slide 2 ",
-        slide3:"Slide 3",
-        titre_slide1:"Titre 1",
-        titre_slide2:"Titre 2",
-        titre_slide3:"Titre 3",
+        capt1:"Rencontre et interagis avec les différents Personnages Non Joueur du village !",
+        capt2:"Combat des créatures hostiles à l'extérieur du village !",
+        capt3:"Arriveras-tu à battre tous les boss de Satis-Kingdom ?",
         // Page histoire
         histoire1:"Il était une fois, dans une contrée lointaine, très lointaine, un jeune homme fatigué de vivre au XXIe siècle, où pollution et nuisances sonores rythmaient son quotidien. En tant qu’adolescent, il avait besoin de liberté et de se reconnecter avec la nature. Un jour, alors qu’il allait chercher son repas dans une boulangerie proche de son école, il tomba sur un panneau publicitaire proposant des vacances déconnectées du monde extérieur, dans sa propre ville, et à petit prix !",
         histoire2:"Craignant que l’occasion ne se représente plus, et dans l’élan d’un choix impulsif, il décida de ne pas retourner en cours cet après-midi-là pour profiter de cette promesse de liberté.",
@@ -173,12 +167,9 @@ const translations = {
         big_installer:"DOWNLOAD ME !",
         //Page d'accueil (ceux pas encore la)
         trailer:"Je suis le trailer en anglais",
-        slide1:"Slide 1 ",
-        slide2:"Slide 2 ",
-        slide3:"Slide 3",
-        titre_slide1:"Titre 1",
-        titre_slide2:"Titre 2",
-        titre_slide3:"Titre 3",
+        capt1:"Meet and interact with the various Non-Player Characters in the village!",
+        capt2:"Fight hostile creatures outside the village!",
+        capt3:"Can you beat all the bosses in Satis-Kingdom?",
         // Page histoire
         histoire1:"Once upon a time, in a land far, far away, there lived a young man who had grown tired of life in the 21st century, where pollution and noise dictated the rhythm of his daily routine. As a teenager, he craved freedom and a reconnection with nature. One day, while picking up lunch at a bakery near his school, he stumbled upon an advertisement offering a digital detox vacation right in his own city, and at a low price! ",
         histoire2:"Fearing the opportunity might never come again, and caught in a moment of impulsiveness, he decided not to return to class that afternoon and instead embrace the call of freedom.",
